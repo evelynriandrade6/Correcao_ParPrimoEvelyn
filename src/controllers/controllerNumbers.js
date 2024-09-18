@@ -12,7 +12,7 @@ module.exports = class controllerNumbers{
         const{numero} = req.body;
 
         if (numero <= 1){
-            return res.status(200).json({message: "Não é primo!"});
+            return res.status(200).json({message: "Não é primo e 1!"});
         }
 
         for(let i = 2; i < numero; i++){
